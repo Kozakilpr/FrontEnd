@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Форма заполнения данных о пользователе</title>
+    <style>
+        body {
+            font-family: Garamond, sans-serif; /* Измените на желаемый шрифт */
+        }
+    </style>
+</head>
+<body>
+    <h1>Форма заполнения данных о пользователе</h1>
+    <form>
+        <label for="last-name">Фамилия:</label>
+    
+    
+
+        <input type="text" id="last-name" name="last-name" required><br><br>
+    
+
+
+        <label for="first-name">Имя:</label>
+        <input type="text" id="first-name" name="first-name" required><br><br>
+
+        <label for="middle-name">Отчество:</label>
+        <input type="text" id="middle-name" name="middle-name"><br><br>
+
+        <label for="gender">Пол:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Мужской</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Женский</label><br><br>
+
+        <label for="username">Логин:</label>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="birthdate">Дата рождения:</label>
+        <input type="date" id="birthdate" name="birthdate" required><br><br>
+
+        <label for="info">Общая информация:</label><br><br>
+        <textarea id="info" name="info" rows="6" cols="60"></textarea><br><br>
+        Вы довольны нашем сервисом?
+        <label>
+            Да
+            <input type="radio" name="да" value="нет">
+        </label>
+        <label>
+            нет
+            <input type="radio" name="да" value="нет">
+        </label>
+        <label>
+            не знаю
+            <input type="radio" name="да" value="нет">
+        </label>
+        <br>
+        <br>
+
+        <label for="custom-field">Коментарий:</label>
+
+        <input type="text" id="custom-field" name="custom-field"><br><br>
+
+        <input type="submit" value="Отправить">
+    </form>
+</body>
+</html>

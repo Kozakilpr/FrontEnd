@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Форма заполнения данных о пользователе</title>
+    <style>
+        body {
+            font-family: Comic Sans MS, sans-serif;
+        }
+
+        form {
+            border: 1px solid #ccc;
+            padding: 20px;
+            width: 400px;
+        }
+
+        label {
+            font-weight: bold;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #da1414;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        /* Дополнительные цвета */
+        label.colorful {
+            color: red;
+        }
+
+        input[type="text"].colorful, textarea.colorful {
+            background-color: rgb(201, 16, 207);
+        }
+
+        input[type="radio"].colorful {
+            background-color: green;
+        }
+
+        input[type="submit"].colorful {
+            background-color: blue;
+        }
+
+        input[type="submit"].colorful:hover {
+            background-color: rgb(13, 13, 190);
+        }
+    </style>
+</head>
+<body>
+    <h1>Форма заполнения данных о пользователе</h1>
+    <form>
+        <label class="colorful" for="last-name">ФАМИЛИЯ:</label>
+        <input type="text" class="colorful" id="last-name" name="last-name" required><br><br>
+
+        <label class="colorful" for="first-name">ИМЯ:</label>
+        <input type="text" class="colorful" id="first-name" name="first-name" required><br><br>
+
+        <label class="colorful" for="middle-name">ОТЧЕСТВО:</label>
+        <input type="text" class="colorful" id="middle-name" name="middle-name"><br><br>
+
+        <label class="submit" for="gender">ПОЛ:</label>
+        <input type="radio" class="colorful" id="male" name="gender" value="male">
+        <label class="colorful" for="male">МУЖСКОЙ</label>
+        <input type="radio" class="colorful" id="female" name="gender" value="female">
+        <label class="colorful" for="female">ЖЕНСКИЙ</label><br><br>
+
+        <label class="colorful" for="username">ЛОГИН:</label>
+        <input type="text" class="colorful" id="username" name="username" required><br><br>
+
+        <label class="colorful" for="password">ПАРОЛЬ:</label>
+        <input type="password" class="colorful" id="password" name="password" required><br><br>
+
+        <label class="colorful" for="birthdate">ДАТА РОЖДЕНИЯ:</label>
+        <input type="date" class="colorful" id="birthdate" name="birthdate" required><br><br>
+
+        <label class="colorful" for="info">ОБЩАЯ ИНФОРМАЦИЯ:</label><br><br>
+        <textarea class="colorful" id="info" name="info" rows="6" cols="60"></textarea><br><br>
+
+    
+</html>
