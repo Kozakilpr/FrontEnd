@@ -4,27 +4,6 @@ body {
 
 }
 
-#block {
-    background: red;
-    color: #fff;
-    text-align: center;
-    width: 50px;
-    line-height: 50px;
-    position: absolute;
-    border-radius: 50%;
-}
-
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50px;
-    background-color: #189198;
-    text-align: center;
-    line-height: 50px;
-
-}
 
 header {
     background-image: url("C:/D/FrontEnd/FrontEnd/Lesson05/image.jpg");
@@ -33,7 +12,7 @@ header {
     background-position: center;
     position: fixed;
     top: 0;
-    left: 0;
+    left: 10;
     width: 100%;
     height: 100vh;
     text-align: center;
@@ -47,34 +26,9 @@ header {
     padding: 20px;
     margin-bottom: 30px;
     position: relative;
-    background-color: rgb(160, 136, 119);
+    background-color: rgb(167, 110, 135);
 }
 
-.card:nth-child(1) {
-    border-color: rgb(24, 27, 23);
-    background-color: rgb(160, 136, 119);
-}
-
-.card:nth-child(2) {
-    border-color: rgb(18, 18, 35);
-    background-color: rgb(160, 136, 119);
-}
-
-.card:nth-child(3) {
-    border-color: rgb(8, 25, 8);
-    background-color: rgb(160, 136, 119);
-}
-
-.card img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-.card h2,
-.card p {
-    margin: 0;
-}
 
 .card h2 {
     font-size: 20px;
